@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align:center;/*we add this in parent and inline-block for child to  center elements*/
+  background-color:lightgrey;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.row{
+    width:100%;
+    display: inline-block;
+   text-align:center; 
+}
+.drum-pad{
+    width :100px;
+    height:100px;
+    margin :5px;
+   display: inline-block; 
+   float:none; /*this will center pads*/
+   font-size:large;
+   font-weight:400;
+     box-shadow: 1px 2px 3px rgba(136, 129, 246,.5);
+       /*box-shadow: 5px 10px 15px rgba(136, 129, 246,.5);*/
+}
+#drum-machine{
+    margin-top:1%;
+text-align:center;
+width:400px;
+border:outset;
+display: inline-block;
+background-color:white;
+padding-bottom:2%;
+
+}
+#display{
+    width:80%;
+     height:60px;
+     padding-bottom:10px;
+     padding-top:10px;
+  display: inline-block;
+  margin-top:3%;
+  font-family:'Agency FB';
+  font-weight:400;
+  font-size:xx-large;
+}
+@media( max-width:700px) {
+    .drum-pad {
+        width: 60px;
+        height: 60px;
+    }
+    #drum-machine {
+        width: 240px;
+       
+    }
+    #display {
+        font-size:x-large;
+    }
+}
